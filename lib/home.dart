@@ -7,25 +7,48 @@ class Home extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('My Everyday Coffee'),
-        backgroundColor: Colors.brown[300],
+        title: const Text('My Coffee', 
+        style: TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+          )
+        ),
+        backgroundColor: Colors.brown[600],
         centerTitle: true,
       ),
-      body: Container(
-        color: Colors.orange,
-        width: 300,
-        height: 100,
-        padding: const EdgeInsets.all(20),
-        margin: const EdgeInsets.fromLTRB(10, 10, 0, 0),
-        child: const Text('Drinking coffee with IOB Students',
-          style: TextStyle(
-            fontSize: 18,
-            letterSpacing: 2,
-            decoration: TextDecoration.underline,
-            fontWeight: FontWeight.bold,
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: [
+          Container(
+            height:60,
+            color: Colors.brown[300],
+            padding: const EdgeInsets.all(20),
+            child: const Text('How I like my coffee ...',
+              style: TextStyle(
+                color: Colors.black,
+              ),
+            )
           ),
-        ),
-      ),
-    ); 
+          Container(
+            height:60,
+            padding: const EdgeInsets.all(20),
+            color: Colors.brown[100],
+            child: const Text('Coffee')
+          ),
+          Container(
+            height:60,
+            padding: const EdgeInsets.all(20),
+            color: Colors.brown[50],
+            child: const Text('Sugar')
+          ),
+          Expanded(
+            child: Image.asset('assets/img/coffee_bg.jpg',
+              fit: BoxFit.fitWidth,
+            )
+          )
+        ],
+      ),     
+    );
   }
 }
