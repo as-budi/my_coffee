@@ -1,0 +1,2 @@
+/Users/agungsetiabudi/Codes/Flutter/my_coffee/android/app/.cxx/Debug/1s1r5425/x86_64/CMakeFiles/rebuild_cache.dir
+/Users/agungsetiabudi/Codes/Flutter/my_coffee/android/app/.cxx/Debug/1s1r5425/x86_64/CMakeFiles/edit_cache.dir
